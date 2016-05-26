@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" lang="pl">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cookie</title>
+  <script src="cookies.js"></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    a, a:hover, a:visited {
+      display: block;
+      margin: 10px;
+      color: #21C6FC;
+    }
+
+    button {
+      padding: 20px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      background-color: #FFF;
+      cursor: pointer;
+    }
+  </style>
+
+  <script>
+  function removeCookie() {
+    document.cookie = 'cookieAlert' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    location.reload();
+  }
+  </script>
+</head>
+<body>
+  <h1>Cookie Alert demo</h1>
+  <a href="https://github.com/PoprostuRonin/cookies">GitHub repository</a>
+
+  <button onclick="removeCookie()">Remove cookie</button>
+</body>
+</html>
