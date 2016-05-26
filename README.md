@@ -10,7 +10,7 @@ Include it, nothing more.
 
 Demo
 ------------
-[Click here](https://www.poprosturonin.github.io/cookies)
+[Click here](https://poprosturonin.github.io/cookies/)
 
 License
 ------------

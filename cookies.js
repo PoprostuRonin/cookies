@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var link = document.createElement('a');
   var image = document.createElement('img');
 
-  var containerStyle = 'font-size: 13px; z-index: 1000; width: 100%; box-sizing: border-box; padding: 5px 10px; opacity: 0.8; position: fixed; bottom: 0; background-color: #000; color: #FFF;'
+  var containerStyle = 'font-size: 13px; z-index: 1000; width: 100%; box-sizing: border-box; padding: 5px 10px; opacity: 0.8; position: fixed; bottom: 0; left: 0; background-color: #000; color: #FFF;'
   var linkStyle = 'position: absolute; right: 10px; top: 5px; cursor: pointer;';
 
   image.setAttribute('src','https://poprosturonin.github.io/cookies/close.png')
