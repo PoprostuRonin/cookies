@@ -1,4 +1,4 @@
-# Cookies
+Cookies
 =========
 Good, plain JS cookie alert. Saves cookie with name 'cookieAlert' when user closes alert.
 Doesn't require any frameworks to work.

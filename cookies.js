@@ -4,6 +4,13 @@ Original repository: https://github.com/PoprostuRonin/cookies
 http://poprosturonin.com
 */
 
+var langDefault = '<span style="font-size: 11px;">This website use cookies</span><br>' +
+'This website uses cookies for statistic and . You can change cookie settings in your browser.';
+
+var lang = [];
+lang['pl'] = '<span style="font-size: 11px;">Ta strona wykorzystuje pliki cookies</span><br>' +
+'Pliki cookies są wykorzystywane w celach statystycznych i reklamowych. Korzystając z tej strony zgadasz się na ich użycie zgodnie z ustawieniami swojej przeglądarki';
+
 document.addEventListener("DOMContentLoaded", function() {
   /* Check if user has seen this alert before */
   var hasSeen = false;
@@ -35,8 +42,14 @@ document.addEventListener("DOMContentLoaded", function() {
   container.setAttribute('style', containerStyle);
   link.setAttribute('style', linkStyle);
 
-  container.innerHTML = '<span style="font-size: 11px;">This website use cookies</span><br>' +
-  'This website uses cookies to enchance your experience. You can change cookie settings in your browser.';
+  var language = window.navigator.userLanguage || window.navigator.language;
+  console.log(language);
+  if(language in lang) {
+    container.innerHTML = lang[language];
+  }
+  else {
+    container.innerHTML = langDefault;
+  }
 
   link.appendChild(image);
   container.appendChild(link);
