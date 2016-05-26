@@ -3,6 +3,8 @@
 Good, plain JS cookie alert. Saves cookie with name 'cookieAlert' when user closes alert.
 Doesn't require any frameworks to work.
 
+*Note:* Font is inherited.
+
 Use
 ------------
 `<script src="https://poprosturonin.github.io/cookies/cookies.js"></script>`
